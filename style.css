@@ -24,13 +24,13 @@ button{
     margin: 40px 20px 0;
     font-size: 0;
     font-family: sans-serif;
-    height: 45px;
+    /* height: 45px; */
 }
 
 li{
     display: inline;
     margin: 0 25px 0;
-    color: #025157;
+    /* color: #025157; */
 }
 
 .header > *{
@@ -86,6 +86,10 @@ li{
     text-align: center;
 }
 
+.publish{
+    margin-left: 30px;
+}
+
 .publish h3{
     font-family: 'Poppins', serif;
     font-size: 40px;
@@ -107,4 +111,11 @@ li{
 .publish > form p{
     color: #025157;
     margin-right: 18px;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
 }
