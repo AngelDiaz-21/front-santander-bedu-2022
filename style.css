@@ -130,3 +130,9 @@ li{
     width: 120px;
     margin-top: 10px;
 }
+
+.features{
+    display: grid;
+    /* Se indica que serán 2 columnas de 1fr (divide la pantalla a la mitad porque son 2 columnas) */
+    grid-template-columns: repeat(2, 1fr);
+}
