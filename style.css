@@ -133,6 +133,7 @@ li{
 
 .features{
     display: grid;
-    /* Se indica que serán 2 columnas de 1fr (divide la pantalla a la mitad porque son 2 columnas) */
     grid-template-columns: repeat(2, 1fr);
+    height: 660px;
+    grid-template-rows: repeat(2, 1fr);
 }
