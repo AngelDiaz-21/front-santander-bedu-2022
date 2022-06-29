@@ -26,7 +26,7 @@ button {
     font-family: sans-serif;
 }
 
-.fixed-header{
+.fixed-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@ li {
     margin: 0 25px 0;
 }
 
-.header > * {
+.header>* {
     display: inline-block;
     font-size: 16px;
     line-height: 45px;
@@ -92,7 +92,7 @@ li {
     text-align: center;
 }
 
-figure.intro > img {
+figure.intro>img {
     width: 70%;
 }
 
@@ -212,6 +212,49 @@ figure.intro > img {
     height: 100%;
 }
 
+/* Carrrusel */
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
     /* .navbar,
@@ -219,7 +262,7 @@ figure.intro > img {
         display: none;
     } */
 
-    h1{
+    h1 {
         font-size: 30px;
     }
 
@@ -227,37 +270,37 @@ figure.intro > img {
         margin-top: 130px;
     }
 
-    .banner > img{
+    .banner>img {
         width: 100%;
     }
 
-    .publish > form {
+    .publish>form {
         flex-direction: column;
     }
 
-    .publish > form > div{
+    .publish>form>div {
         height: 50px;
         margin-top: 10px;
     }
 
-    .publish > form > input{
+    .publish>form>input {
         height: 65%;
     }
 
-    .promo{
+    .promo {
         flex-direction: column;
         max-width: 90%;
     }
 
-    .explanatory-video > video{
+    .explanatory-video>video {
         width: 100%;
     }
 
-    .publish{
+    .publish {
         margin-top: 10px;
     }
 
-    .publish > h2{
+    .publish>h2 {
         font-size: 25px;
         /* Interlineado */
         line-height: 1.2;
@@ -278,21 +321,13 @@ figure.intro > img {
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
-@media (min-width: 576px) and (max-width: 767px) {
-    
-}
+@media (min-width: 576px) and (max-width: 767px) {}
 
 /** dispositivos medianos (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}
+@media (min-width: 768px) and (max-width: 991px) {}
 
 /** dispositivos grandes (desktops) */
-@media (min-width: 992px) and (max-width: 1199px) {
-    
-}
+@media (min-width: 992px) and (max-width: 1199px) {}
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
-@media (min-width: 1200px) {
-    
-}
+@media (min-width: 1200px) {}
