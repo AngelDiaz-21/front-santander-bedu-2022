@@ -1,10 +1,9 @@
 body {
     background-color: #fffbf7;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     color: #025157;
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -25,7 +24,6 @@ button {
     margin: 40px 20px 0;
     font-size: 0;
     font-family: sans-serif;
-    /* height: 45px; */
 }
 
 .fixed-header{
@@ -39,7 +37,6 @@ button {
 li {
     display: inline;
     margin: 0 25px 0;
-    /* color: #025157; */
 }
 
 .header > * {
@@ -59,14 +56,13 @@ li {
 }
 
 .navbar {
-    width: 60%;
     text-align: center;
     color: #025157;
     font-weight: 500;
+    background-color: #fffbf7;
 }
 
 .actions {
-    width: 15%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
@@ -80,6 +76,7 @@ li {
 
 .actions a {
     color: #67b54b;
+    text-decoration: none;
 }
 
 .actions button {
@@ -93,6 +90,10 @@ li {
 .main {
     margin-top: 285px;
     text-align: center;
+}
+
+figure.intro > img {
+    width: 70%;
 }
 
 .publish {
@@ -213,10 +214,10 @@ li {
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar,
+    /* .navbar,
     .actions{
         display: none;
-    }
+    } */
 
     h1{
         font-size: 30px;
@@ -267,6 +268,7 @@ li {
         grid-template: repeat(4, 1fr) / 1fr;
         padding-left: 0;
         padding-right: 0;
+        height: 100%;
     }
 
     .feature-image {
