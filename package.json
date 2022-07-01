@@ -1,0 +1,19 @@
+{
+  "name": "front-santander-bedu-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelDiaz-21/front-santander-bedu-2022.git"
+  },
+  "author": "Angel Alberto Díaz Cortés",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelDiaz-21/front-santander-bedu-2022/issues"
+  },
+  "homepage": "https://github.com/AngelDiaz-21/front-santander-bedu-2022#readme"
+}
