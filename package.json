@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AngelDiaz-21/front-santander-bedu-2022/issues"
   },
-  "homepage": "https://github.com/AngelDiaz-21/front-santander-bedu-2022#readme"
+  "homepage": "https://github.com/AngelDiaz-21/front-santander-bedu-2022#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
 }
