@@ -1,4 +1,55 @@
+@use 'global' as *;
+
 .blog{
     background-color: #ffffff;
-}
+    max-width: unset;
+    padding: 5% 10%;
 
+    // Anidación de etiquetas
+    .title{
+        // Como hacer uso de la clase o herencia
+        @extend %base-title;
+    }
+
+    .process-list{
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process{
+            margin-bottom: 25px;
+
+            & > div{
+                & > h3{
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                & > p{
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            }
+            // Al contenedor (div)
+            .process-icon{
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+                width: 60px;
+
+                // Directamente a la imagen
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    button{
+        border-radius: 8px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 12px;
+        width: 180px;
+    }
+}
