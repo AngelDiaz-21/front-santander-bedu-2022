@@ -26,18 +26,8 @@ button {
     background-color: #025157;
 }
 
-.header {
-    margin: 40px 20px 0;
-    font-size: 0;
-    font-family: sans-serif;
-}
-
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffbf7;
+ul{
+    margin: 0 auto;
 }
 
 li {
@@ -45,12 +35,8 @@ li {
     margin: 0 25px 0;
 }
 
-.header>* {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 45px;
-    height: 100%;
-    vertical-align: middle;
+nav{
+    background-color: #fffbf7;
 }
 
 .logo {
@@ -58,14 +44,7 @@ li {
 }
 
 .logo>img {
-    width: 15%;
-}
-
-.navbar {
-    text-align: center;
-    color: #025157;
-    font-weight: 500;
-    background-color: #fffbf7;
+    width: 25%;
 }
 
 .actions {
@@ -75,8 +54,6 @@ li {
 }
 
 .actions>* {
-    /* margin-right: 10px; */
-    /* margin-left: 10px; */
     margin: 0 10px;
 }
 
@@ -94,19 +71,24 @@ li {
 }
 
 .main {
-    margin-top: 285px;
+    margin-top: 130px;
     text-align: center;
+    padding: 20px;
 }
 
-figure.intro>img {
+.main .intro>img {
     width: 70%;
+}
+
+.texto-boton:hover{
+    background-color: #67b54b;
 }
 
 .publish {
     margin-left: 30px;
 }
 
-.publish h3 {
+.publish h2 {
     font-family: 'Poppins', serif;
     font-size: 40px;
     line-height: 48px;
@@ -155,7 +137,7 @@ figure.intro>img {
     padding: 5% 10%;
     display: grid;
     /*Atajo de columnas y filas */
-    height: 660px;
+    height: 800px;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
@@ -174,6 +156,7 @@ figure.intro>img {
 .features .feature-card .feature-content {
     padding: 30px 20px 40px 40px;
     flex: 2;
+    width: 70%;
 }
 
 .features .feature-card .feature-content>* {
@@ -185,7 +168,7 @@ figure.intro>img {
     width: 50px;
 }
 
-.features .feature-card .feature-content h3 {
+.features .feature-card .feature-content h2 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
@@ -209,7 +192,7 @@ figure.intro>img {
     width: 40%;
     position: relative;
     right: -50px;
-    height: 80%;
+    height: 30%;
 }
 
 .features .feature-card .feature-image figure,
@@ -225,11 +208,17 @@ figure.intro>img {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 
 .success-stories .overview {
     flex: 2;
     padding-right: 100px;
+    width: 70%;
+}
+
+.stories-carousel{
+    width: 30%;
 }
 
 .success-stories .overview h2 {
@@ -263,13 +252,12 @@ figure.intro>img {
 .success-stories .card {
     max-width: 370px;
     width: 100%;
-    min-height: 600px;
     margin: 0 auto;
 }
 
 /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
-.success-stories .card img {
-    max-height: 30vh;
+.success-stories .card>img {
+    height: 250px;
     object-fit: cover;
 }
 
@@ -295,7 +283,7 @@ figure.intro>img {
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .success-stories .card .card-body .results {
@@ -317,7 +305,7 @@ figure.intro>img {
     display: block;
     margin-left: 0;
     border-radius: 5px;
-    font-size: 13;
+    font-size: 13px;
     font-weight: 600;
     padding: 12px 20px;
     width: 100%;
@@ -348,18 +336,7 @@ figure.intro>img {
 /* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
 .success-stories .card .card-body .card-circle.everly {
     background-color: #f9da73;
-    border: 5px solid #f9da73;
-}
-
-/* Los círculos deben recibir la imagen y ajustarla al tamaño */
-.success-stories .card .card-body .card-circle.everly img {
-    object-fit: contain;
-    width: 100%;
-}
-
-.success-stories .card .card-body .card-circle.everly {
-    background-color: #f9da73;
-    border: 5px solid #f9da73;
+    border: 15px solid #f9da73;
 }
 
 .success-stories .card .card-body .card-circle.summit {
@@ -372,6 +349,7 @@ figure.intro>img {
     border: 5px solid #ef7179;
 }
 
+/* Los círculos deben recibir la imagen y ajustarla al tamaño */
 .success-stories .card .card-body .card-circle.everly img,
 .success-stories .card .card-body .card-circle.summit img,
 .success-stories .card .card-body .card-circle.mambe img {
@@ -379,55 +357,215 @@ figure.intro>img {
     width: 100%;
 }
 
-/** dispositivos móviles en vista viewport (vertical) */
-@media (max-width: 575px) {
-    /* .navbar,
-    .actions{
-        display: none;
-    } */
-
-    h1 {
-        font-size: 30px;
+@media (max-width: 1750px){
+    .success-stories .card {
+        height: 650px;
     }
+}
 
-    .main {
-        margin-top: 130px;
+@media (max-width: 1400px){
+    .success-stories .card {
+        height: 690px;
     }
+}
 
-    .banner>img {
+@media (max-width: 1199px) {
+    .main .banner>img {
         width: 100%;
     }
 
-    .publish>form {
+    .features {
+        height: auto;
+    }
+
+    .features .feature-card .feature-content {
+        /* top,  right, bottom, left*/
+        padding: 0px 0px 10px 30px;
+    }
+
+    .success-stories .card {
+        height: 650px;
+    }
+
+    .success-stories .overview {
+        width: 60%;
+    }
+    
+    .stories-carousel{
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
         flex-direction: column;
     }
 
-    .publish>form>div {
-        height: 50px;
-        margin-top: 10px;
+    .features {
+        padding: 5% 10%;
     }
 
-    .publish>form>input {
-        height: 65%;
+    .features .feature-card .feature-content {
+        /* top,  right, bottom, left*/
+        padding: 0px 0px 10px 20px;
+    }
+
+    .features .feature-card .feature-content h2 {
+        font-size: 18px;
+    }
+    
+    .features .feature-card .feature-content p {
+        font-size: 12px;
+    }
+    
+    .features .feature-card .feature-content a {
+        font-size: 12px;
+    }
+
+    .features .feature-card .feature-content img {
+        display: none;
+    }
+
+    .success-stories .overview {
+        width: 55%;
+    }
+    
+    .stories-carousel{
+        width: 45%;
+    }
+
+    .success-stories .card {
+        height: 680px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    .features .feature-card .feature-content {
+        /* top,  right, bottom, left*/
+        padding: 0px 0px 10px 10px;
+    }
+    
+    .features .feature-card .feature-content h2 {
+        font-size: 14px;
+    }
+    
+    .features .feature-card .feature-content p {
+        font-size: 10px;
+    }
+    
+    .features .feature-card .feature-content a {
+        font-size: 9px;
+    }
+    
+    .features .feature-card .feature-image {
+        right: -20px;
+    }
+
+    .success-stories {
+        padding: 5% 8%;
+        width: 100%;
+    }
+
+    .success-stories .overview {
+        padding-right: 30px;
+        width: 50%;
+    }
+
+    .stories-carousel{
+        width: 50%;
+    }
+    
+    .success-stories .overview h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .success-stories .overview p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .success-stories .overview button {
+        font-size: 12px;
+        padding: 12px 12px 6px 12px;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .success-stories .overview img {
+        width: 400px;
+        max-width: 100%;
+    }
+    
+    .success-stories .card {
+        height: 670px;
+    }
+    
+    /* Estos son los estilos para textos y acomodo de elementos */
+    .success-stories .card .card-body h4 {
+        line-height: 20px;
+        margin-bottom: 12px;
+        font-family: "Slabo 27px", serif;
+    }
+    
+    .success-stories .card .card-body h3 {
+        font-size: 20px;
+    }
+    
+    .success-stories .card .card-body .results p {
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo img{
+        width: 80%;
     }
 
     .promo {
-        flex-direction: column;
         max-width: 90%;
+        margin: 10px auto;
     }
 
     .explanatory-video>video {
         width: 100%;
     }
 
+    .explanatory-video img{
+        width: 60px;
+    }
+
     .publish {
         margin-top: 10px;
+        margin-left: 0;
     }
 
     .publish>h2 {
         font-size: 25px;
-        /* Interlineado */
         line-height: 1.2;
+    }
+
+    .publish>form>div{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish>form {
+        flex-direction: column;
     }
 
     /** Estilos de portada principal y sección de publicidad */
@@ -438,28 +576,66 @@ figure.intro>img {
         height: 100%;
     }
 
+    .features .feature-card .feature-content {
+        /* top,  right, bottom, left*/
+        padding: 20px 15px 20px 15px;
+    }
+
+    .success-stories {
+        flex-direction: column;
+    }
+
+    .success-stories .overview {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .stories-carousel{
+        width: 100%;
+    }
+
+    .success-stories .card {
+        height: 505px;
+    }
+    
+    .success-stories .overview h2{
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .success-stories .card .card-body h3{
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .success-stories .card .card-body p{
+        font-size: 16px;
+    }
+
+    .success-stories .card>img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 340px) {
+    .publish>form>div{
+        margin-top: 10px;
+    }
+
+    .publish>form>input {
+        height: 65%;
+    }
+
+    .success-stories .card {
+        height: 588px;
+    }
+
     .feature-image {
         display: none;
     }
 
-    .success-stories {
-        flex-direction: column;
+    .features .feature-card .feature-content figure>img {
+        display: block;
     }
 }
-
-/** dispositivos pequeños en vista landscape (horizontal) */
-@media (min-width: 576px) and (max-width: 767px) {}
-
-/** dispositivos medianos (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .success-stories {
-        flex-direction: column;
-        padding: 5% 15px;
-    }
-}
-
-/** dispositivos grandes (desktops) */
-@media (min-width: 992px) and (max-width: 1199px) {}
-
-/** dispositivos extra grandes (monitores grandes, tvs) */
-@media (min-width: 1200px) {}
