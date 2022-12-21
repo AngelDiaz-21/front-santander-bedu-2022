@@ -15,13 +15,20 @@ nav {
   background-color: #fffbf7;
 }
 
+li {
+  display: inline;
+  margin: 0 25px 0;
+}
+
 .navbar ul {
   margin: 0 auto;
 }
-.navbar .logo {
+
+.logo {
   width: 15%;
 }
-.navbar .logo > img {
+
+.logo > img {
   width: 25%;
 }
 

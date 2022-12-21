@@ -14,19 +14,24 @@ nav {
     background-color: #fffbf7;
 }
 
+li {
+    display: inline;
+    margin: 0 25px 0;
+}
+
 .navbar {
 
     ul {
         margin: 0 auto;
     }
+}
 
-    .logo {
-        width: 15%;
-    }
+.logo {
+    width: 15%;
+}
 
-    .logo>img {
-        width: 25%;
-    }
+.logo>img {
+    width: 25%;
 }
 
 .actions {
