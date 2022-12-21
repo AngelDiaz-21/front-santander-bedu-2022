@@ -7,6 +7,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    background-color: #fffbf7;
+}
+
+li {
+    display: inline;
+    margin: 0 25px 0;
+}
+
 h1 {
     color: #025157;
     font-family: "Alegreya", serif;
@@ -14,21 +28,8 @@ h1 {
     margin-bottom: 24px;
 }
 
-.header p {
-    color: #46484c;
-    max-width: 680px;
+ul{
     margin: 0 auto;
-    margin-bottom: 72px;
-}
-
-main {
-    margin-top: 285px;
-    text-align: center;
-}
-
-body {
-    background-color: #fffbf7;
-    font-family: "Open Sans", sans-serif;
 }
 
 .logo {
@@ -36,24 +37,11 @@ body {
 }
 
 .logo>img {
-    width: 15%;
-}
-
-.navbar {
-    background-color: #fffbf7;
-    text-align: center;
-}
-
-.navbar-light .nav-item .nav-link {
-    color: #025157;
+    width: 25%;
 }
 
 .navbar-light .navbar-toggler {
     border-color: #025157;
-}
-
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .actions {
@@ -63,23 +51,32 @@ body {
 }
 
 .actions>* {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .actions a {
     color: #67b54b;
+    text-decoration: none;
 }
 
 .actions button {
     color: white;
     background-color: #67b54b;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 14px;
     border: 0;
     border-radius: 5px;
+}
+
+.information{
+    margin-top: 130px;
+    text-align: center;
+}
+
+.information p {
+    color: #46484c;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .faq {
@@ -108,24 +105,24 @@ body {
 }
 
 @media (max-width: 575px) {
-.container {
-    display: flex;
-}
+    .logo img{
+        width: 80%;
+    }
 
-.container .row {
-    flex-direction: column;
-}
+    .container {
+        display: flex;
+    }
 
-main {
-    margin-top: 130px;
-    padding: 5%;
-}
+    .container .row {
+        flex-direction: column;
+    }
 
-h1 {
-    font-size: 30px;
-}
+    main {
+        margin-top: 130px;
+        padding: 5%;
+    }
 
-.logo {
-    width: 40%;
-}
+    h1 {
+        font-size: 30px;
+    }
 }
