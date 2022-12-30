@@ -80,8 +80,79 @@ nav{
     width: 70%;
 }
 
-.texto-boton:hover{
+/* Para el form de email */
+.enter-email {
+    height: 55px;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    max-width: 250px;
+    padding: 1.7em;
+    height: 100%;
+}
+
+.insert {
+    border: 1px solid #b6b6b6;
+    border-radius: 8px 0 0 8px;
+    width: 60%;
+    margin: 0;
+}
+
+.boton-efecto {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: .3s ease all;
+	position: relative;
+	overflow: hidden;
+    height: 100%;
+    padding: 1.75em 5em;
+    color: #fff;
+    background-color: #025157;
+    border-radius: 0 8px 8px 0;
+    margin-left: -10px;
+    border: none;
+}
+
+.uno span {
+    transition: .3s ease-in-out all;
+    position: absolute;
+    left: 2.6em;
+}
+
+.uno .icono {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+.uno svg {
+    color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.uno:hover {
     background-color: #67b54b;
+}
+
+.uno:hover .icono {
+    right: 1em;
+    opacity: 1;
+}
+
+.uno:hover span {
+    left: 1em;
 }
 
 .publish {
