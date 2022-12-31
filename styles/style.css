@@ -92,7 +92,7 @@ nav{
 
 input {
     max-width: 250px;
-    padding: 1.7em;
+    padding-left: 1.7em;
     height: 100%;
 }
 
@@ -112,7 +112,7 @@ input {
 	position: relative;
 	overflow: hidden;
     height: 100%;
-    padding: 1.75em 5em;
+    padding: 0.5em 4em;
     color: #fff;
     background-color: #025157;
     border-radius: 0 8px 8px 0;
@@ -151,7 +151,7 @@ input {
     opacity: 1;
 }
 
-.uno:hover span {
+.uno:hover .text-btn {
     left: 1em;
 }
 
@@ -171,15 +171,15 @@ input {
     color: #343434;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
-.publish>form {
-    display: flex;
-}
-
-.publish>form p {
+.publish p:nth-child(3) {
     color: #025157;
     margin-right: 18px;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: start;
 }
 
 .promo {
@@ -249,6 +249,7 @@ input {
     font-size: 16px;
     color: #7e7e7e;
     font-weight: 400;
+    text-align: justify;
 }
 
 .features .feature-card .feature-content a {
@@ -445,6 +446,18 @@ input {
         width: 100%;
     }
 
+    .explanatory-video {
+        width: 50%;
+    }
+
+    .publish{
+        width: 50%;
+    }
+
+    .explanatory-video>video{
+        width: 100%;
+    }
+
     .features {
         height: auto;
     }
@@ -470,6 +483,19 @@ input {
 @media (max-width: 991px) {
     .promo {
         flex-direction: column;
+    }
+
+    .explanatory-video {
+        width: 100%;
+    }
+
+    .publish{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .explanatory-video>video {
+        width: 100%;
     }
 
     .features {
@@ -518,22 +544,22 @@ input {
     p{
         font-size: 16px;
     }
-    
+
     .features .feature-card .feature-content {
         /* top,  right, bottom, left*/
         padding: 0px 0px 10px 10px;
     }
     
     .features .feature-card .feature-content h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .features .feature-card .feature-content p {
-        font-size: 10px;
+        font-size: 13px;
     }
     
     .features .feature-card .feature-content a {
-        font-size: 9px;
+        font-size: 11px;
     }
     
     .features .feature-card .feature-image {
@@ -609,10 +635,6 @@ input {
         margin: 10px auto;
     }
 
-    .explanatory-video>video {
-        width: 100%;
-    }
-
     .explanatory-video img{
         width: 60px;
     }
@@ -627,18 +649,6 @@ input {
         line-height: 1.2;
     }
 
-    .publish>form>div{
-        display: flex;
-        font-size: 12px;
-        justify-content: center;
-        height: 50px;
-        margin-top: 10px;
-    }
-
-    .publish>form {
-        flex-direction: column;
-    }
-
     /** Estilos de portada principal y sección de publicidad */
     .features {
         grid-template: repeat(4, 1fr) / 1fr;
@@ -650,6 +660,10 @@ input {
     .features .feature-card .feature-content {
         /* top,  right, bottom, left*/
         padding: 20px 15px 20px 15px;
+    }
+
+    .features .feature-card .feature-image img{
+        height: 90px;
     }
 
     .success-stories {
@@ -690,14 +704,6 @@ input {
 }
 
 @media (max-width: 340px) {
-    .publish>form>div{
-        margin-top: 10px;
-    }
-
-    .publish>form>input {
-        height: 65%;
-    }
-
     .success-stories .card {
         height: 588px;
     }
